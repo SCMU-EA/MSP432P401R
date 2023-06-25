@@ -1,0 +1,14 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\main.o"
+".\objects\delay.o"
+".\objects\systeminit.o"
+".\objects\rtc.o"
+".\objects\led.o"
+".\objects\oled.o"
+"..\Library\msp432p4xx_driverlib.lib"
+".\objects\startup_msp432p401r_uvision.o"
+".\objects\system_msp432p401r.o"
+--strict --scatter ".\Objects\MSP432.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\MSP432.map" -o .\Objects\MSP432.axf
