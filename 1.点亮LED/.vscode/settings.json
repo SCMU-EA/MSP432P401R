@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.m": "matlab",
+        "delay.h": "c",
+        "systeminit.h": "c"
+    }
+}
